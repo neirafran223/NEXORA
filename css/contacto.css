@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: var(--text-dark);
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: #023590;
+    color: #fff;
+    padding: 0 1rem;
+}
+img{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav ul li{
+    display: inline-block;
+    margin:  20px;
+    padding: 10px 20px;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: all ease .4s;
+}
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .formulario, .info-contacto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    font-size: 17px;
+  }
+  ion-icon{
+    color: #023590;
+  }
+  .formulario h2,
+  .info-contacto h2 {
+    color: #023590;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #023590;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #002d73;
+  }
+  
+  .mapa {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+  }

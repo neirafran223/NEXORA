@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/ingreso.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+          <div class="nav-left">
+            <img src="img/logoinicio.png" alt="logo">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </div>
+          <a href="registro.html"><button class="btn-ingresar">Ingresar</button></a>
+        </ul>
+    </div>
+
+    <section class="contact-section">
+        <div class="blue-side"></div>
+      
+        <div class="contact-container">
+          <h1>🤝 Trabajemos Juntos</h1>
+          <p class="intro">
+            ¿Tu web quedó a medias? ¿Necesitas comenzar desde cero o rediseñar tu sitio actual?<br>
+            En <strong>Nexora</strong> tomamos el control y llevamos tu proyecto digital a la meta.<br>
+            Déjanos tus datos y te contactaremos en breve.
+          </p>
+          <p class="direct-email">📨 Completa el formulario o escríbenos directamente a <a href="mailto:contacto@nexora.cl">contacto@nexora.cl</a></p>
+      
+          <form class="formulario-contacto" action="#" method="POST">
+            <label for="empresa">🏢 Nombre de la empresa</label>
+            <input type="text" id="empresa" name="empresa" required />
+      
+            <label for="nombre">👤 Nombre de contacto</label>
+            <input type="text" id="nombre" name="nombre" required />
+      
+            <label for="email">📧 Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+      
+            <label for="mensaje">📝 Mensaje o descripción del proyecto</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      
+      </section>
+      <script src="javaScript/validacion-contacto.js"></script>
+</body>
+</html>

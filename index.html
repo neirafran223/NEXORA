@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXORA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="website icon" href="img/logosinfondo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXORA</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="website icon" href="img/logosinfondo.png" />
 </head>
 <body>
-    <div class="nav">
-        <ul>
-          <div class="nav-left">
-            <img src="img/logoinicio.png" alt="logo">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </div>
-          <a href="registro.html"><button class="btn-ingresar">Ingresar</button></a>
-        </ul>
-      </div>
-    <div class="hero">
-        <div class="contenido">
-            <h1>Damos vida a tu proyecto web</h1>
-            <p>En Nexora ayudamos a pequeños negocios a crear, rediseñar o recuperar su página web.
-              Nos encargamos de todo el proceso, con soluciones a medida y tecnología moderna, para 
-              que tú te enfoques en hacer crecer tu negocio.</p>
-            <a href="login.html"><button>Empezar</button></a>
-        </div>
+  <nav class="nav">
+    <div class="nav-left">
+      <img src="img/logoinicio.png" alt="logo" />
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <ul id="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Acerca de</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="contenido">
+      <h1>Damos vida a tu proyecto web</h1>
+      <p>
+        En Nexora ayudamos a pequeños negocios a crear, rediseñar o recuperar su página web.
+        Nos encargamos de todo el proceso, con soluciones a medida y tecnología moderna, para 
+        que tú te enfoques en hacer crecer tu negocio.
+      </p>
+      <a href="login.html"><button>Empezar</button></a>
+    </div>
+  </div>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Script para el menú responsivo -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
